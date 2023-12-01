@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="Text">
-        <item name="android:textColor">@color/black</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
         <item name="android:fontFamily">@font/roboto_regular</item>
         <item name="android:textSize">14sp</item>
     </style>
@@ -21,6 +21,15 @@
         <item name="android:textSize">14sp</item>
     </style>
 
+    <style name="Text.Recycler">
+        <item name="android:textColor">?attr/colorOnSecondary</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Recycler">
+        <item name="android:backgroundTint">?attr/colorOnSecondary</item>
+    </style>
 
     <style name="Button" parent="Widget.Material3.Button.TextButton">
         <item name="android:textColor">@color/red</item>

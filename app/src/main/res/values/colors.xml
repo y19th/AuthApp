@@ -7,4 +7,8 @@
     <color name="blue">#2C6FD3</color>
     <color name="red">#BF4242</color>
     <color name="progress_background">#4D7E7E7E</color>
+
+
+    <color name="dark_primary">#3E4C67</color>
+    <color name="dark_secondary">#232323</color>
 </resources>
