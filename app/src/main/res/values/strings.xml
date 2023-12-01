@@ -14,6 +14,8 @@
     <string name="login_text">Логин: %1s</string>
     <string name="payments">Платежи</string>
     <string name="payment_amount">Количество: %1s</string>
+    <string name="amount_error">Нет корректных данных</string>
+    <string name="created_error">Без даты</string>
     <string name="payment_created">Создано: %1s</string>
     <string name="payment_id">(Id %1d)</string>
 </resources>

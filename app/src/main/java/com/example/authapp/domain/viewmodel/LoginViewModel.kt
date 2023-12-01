@@ -4,7 +4,6 @@ import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.authapp.data.model.RequestLoginModel
-import com.example.authapp.data.model.ResponseErrorModel
 import com.example.authapp.domain.events.LoginEvents
 import com.example.authapp.domain.repositories.LoginRepository
 import com.example.authapp.domain.states.LoginState

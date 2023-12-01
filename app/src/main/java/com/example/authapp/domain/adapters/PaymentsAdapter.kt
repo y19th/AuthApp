@@ -31,10 +31,12 @@ class PaymentsAdapter(
             with(items[position]) {
                 paymentTitle.text = title
                 paymentAmount.text =
-                    if(amount.isNullOrEmpty()) "" else context.getString(R.string.payment_amount, amount)
+                    if(amount.isNullOrEmpty()) context.getString(R.string.amount_error)
+                    else context.getString(R.string.payment_amount, amount)
                 paymentId.text = context.getString(R.string.payment_id,id)
                 paymentCreated.text =
-                    if(created == null) "" else context.getString(R.string.payment_created, created.toString().toDate())
+                    if(created == null) context.getString(R.string.created_error)
+                    else context.getString(R.string.payment_created, created.toString().toDate())
 
             }
         }

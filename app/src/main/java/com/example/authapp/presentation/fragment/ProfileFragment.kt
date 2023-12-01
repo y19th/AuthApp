@@ -12,10 +12,9 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.authapp.R
 import com.example.authapp.databinding.FragmentRegistrationBinding
 import com.example.authapp.domain.adapters.PaymentsAdapter
-import com.example.authapp.domain.states.ProfieState
+import com.example.authapp.domain.states.ProfileState
 import com.example.authapp.domain.viewmodel.ProfileViewModel
 import com.example.authapp.ext.navigateBack
-import com.example.authapp.ext.string
 import kotlinx.coroutines.launch
 import org.koin.androidx.viewmodel.ext.android.getViewModel
 
@@ -49,7 +48,7 @@ class ProfileFragment: BaseFragment<FragmentRegistrationBinding>() {
     }
 
 
-    private fun attachUi(data: ProfieState) {
+    private fun attachUi(data: ProfileState) {
         binding.apply {
             loader(data.isLoading)
             logoutButton.setOnClickListener { it.navigateBack() }

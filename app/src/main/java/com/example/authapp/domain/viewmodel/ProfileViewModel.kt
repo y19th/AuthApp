@@ -5,7 +5,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.authapp.data.model.toListPaymentModel
 import com.example.authapp.domain.repositories.ProfileRepository
-import com.example.authapp.domain.states.ProfieState
+import com.example.authapp.domain.states.ProfileState
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -18,7 +18,7 @@ class ProfileViewModel: ViewModel() {
         const val TAG = "ProfileViewModel"
     }
 
-    private val _state = MutableStateFlow(ProfieState())
+    private val _state = MutableStateFlow(ProfileState())
     val state = _state.asStateFlow()
 
     private val repository = ProfileRepository()
@@ -39,7 +39,7 @@ class ProfileViewModel: ViewModel() {
                 },
                 onError = {
                     Log.i(TAG,"throwed ${it.message}")
-                    _state.update { it.copy(isLoading = false) }
+                    _state.update { state -> state.copy(isLoading = false) }
                 }
             )
         }
