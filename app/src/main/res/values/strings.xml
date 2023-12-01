@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">AuthApp</string>
+    <string name="login_header">Введите логин и пароль</string>
+    <string name="welcome">Добро пожаловать</string>
+    <string name="hint_login">Логин</string>
+    <string name="hint_password">Пароль</string>
+    <string name="continue_text">Продолжить</string>
+    <string name="login_error">Логин введен неверно</string>
+    <string name="password_error">Пароль введен неверно</string>
+    <string name="register_text"><u>Зарегистрироваться</u></string>
+    <string name="registration_header">Регистрация</string>
+    <string name="profile_text">Профиль</string>
+    <string name="logout">Выйти из профиля</string>
+    <string name="login_text">Логин: %1s</string>
+    <string name="payments">Платежи</string>
+    <string name="payment_amount">Количество: %1s</string>
+    <string name="payment_created">Создано: %1s</string>
+    <string name="payment_id">(Id %1d)</string>
+</resources>
